@@ -1,0 +1,9 @@
+[Unit]
+Description=Trojan net
+
+[Service]
+Type=simple
+ExecStart=trojan -c /etc/trojan/client.config.json
+
+[Install]
+WantedBy=multi-user.target
